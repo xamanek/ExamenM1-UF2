@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Examen javaScript</title>
+	<meta charset="utf-8" />  
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="js/miscript.js"></script>
+</head>
+<body>
+<header>
+	<h1>Examen javaScript</h1>
+</header>
+<form name="examen" action="" method="post">
+<fieldset id="eje01">
+	<legend>Ejercicio 1: Calcular la equivalencia en metros de los metros Km introducidos</legend>
+	<input type="text" name="num1_eje01" id="num1_eje01" placeholder="Introduce los Kilómetros">
+	<button type="button" onclick="calcular()">Calcular los metros</button>
+	<span>Resultado:</span><span  id="resultado1" class="resultado"></span>
+</fieldset>
+<fieldset id="eje02">
+	<legend>Ejercicio 2: Poner en mayúsculas y negrita el texto</legend>
+	<p id="texto1">Soy un texto super importante y quiero estar en mayúsculas</p>
+	<button type="button" onclick="trasforma()">Poner en mayúsculas</button>
+	<p>Resultado:</p><p id="resultado2" class="resultado"></p>
+</fieldset>
+<fieldset id="eje03">
+	<legend>Ejercicio 3: Cambiar el color del semáforo según el botón presionado</legend>
+	<div id="semaforo">
+		<div class="redondo" id="rojo"></div>
+		<div class="redondo" id="naranja"></div>
+		<div class="redondo" id="verde"></div>
+	</div>
+	<br />
+	<!-- SOLUZIONE SEMPLICE
+	<button type="button" onclick="cambiacolorred()">rojo</button>
+	<button type="button" onclick="cambiacolororange()">ámbar</button>
+	<button type="button" onclick="cambiacolorgreen()">verde</button> -->
+	
+	<!-- // VERSION 1
+	<button type="button" class="bot rojo" onclick="cambiacolorred()">rojo</button>
+	<button type="button" class="bot naranja" onclick="cambiacolororange()">ámbar</button>
+	<button type="button" class="bot verde" onclick="cambiacolorgreen()">verde</button> -->
+	
+	<button type="button" class="bot rojo" onclick="cambiacolor('#f44336')">rojo</button>
+	<button type="button" class="bot naranja" onclick="cambiacolor('#f18c28')">ámbar</button>
+	<button type="button" class="bot verde" onclick="cambiacolor('#54bd00')">verde</button>
+	
+</fieldset>
+
+</form>
+	
+</body>
+</html>
